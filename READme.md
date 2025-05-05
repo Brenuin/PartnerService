@@ -1,3 +1,11 @@
+ Script Grabber: ISBN Book Info Fetcher
+This Python script automates the process of retrieving book data using random ISBNs. It selects an ISBN from a local list, queries the Open Library API for metadata (e.g., title, author), and writes the result to file.txt. If a book isn’t found or the API request fails, the script gracefully handles the error with a message.
+
+Simple, lightweight, and hands-free—just run the script to generate a file of book data from real-world sources.
+
+
+
+
 Script          grabber          External API          writer
   |                |                  |                  |
   |                |                  |                  |
@@ -14,5 +22,3 @@ Script          grabber          External API          writer
   |                |                  |--- Write to file.txt
   |                |                  |                  |
   |                |                  |                  |
-
-ok so this script is pretty basic it just grabs book details using isbn numbers first it picks a random isbn from a list we got then it sends this isbn to some api at openlibrary.org to get the book info like title and author and stuff if it works it writes this info into a file called file.txt but if it doesnt get the info or something goes wrong it just prints out an error message you just run the script and it does all this by itself thats pretty much all it does nothing too fancy.
